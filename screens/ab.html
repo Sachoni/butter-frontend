@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Butter Ecommerce - Contact Us</title>
+  <style>
+    :root {
+      --butter-yellow: #f7c843;
+      --butter-dark: #4a3f2f;
+      --butter-soft: #fff6dd;
+      --butter-brown: #8a5a2e;
+      --text-dark: #2f2f2f;
+      --white: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Poppins", Arial, sans-serif;
+      background: #ffffff;
+      color: var(--text-dark);
+    }
+
+    header {
+      background: var(--white);
+      padding: 20px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    .logo {
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--butter-brown);
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: var(--text-dark);
+      font-weight: 500;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: var(--butter-soft);
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      color: var(--butter-brown);
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      max-width: 600px;
+      margin: auto;
+      color: #555;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      padding: 40px 60px;
+    }
+
+    .contact-box {
+      background: var(--butter-soft);
+      padding: 25px;
+      border-radius: 10px;
+      text-align: center;
+      border: 1px solid #f0e0b2;
+    }
+
+    .contact-box h3 {
+      margin: 10px 0;
+      color: var(--butter-brown);
+    }
+
+    .contact-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 40px 60px;
+      gap: 40px;
+    }
+
+    .form input,
+    .form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 15px;
+    }
+
+    .btn {
+      background: var(--butter-yellow);
+      border: none;
+      padding: 14px 30px;
+      font-size: 16px;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--butter-dark);
+    }
+
+    footer {
+      background: var(--butter-dark);
+      color: var(--white);
+      padding: 40px 60px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 40px;
+    }
+
+    footer h3 {
+      margin-bottom: 15px;
+      color: var(--butter-yellow);
+    }
+
+    footer a {
+      display: block;
+      color: #eee;
+      text-decoration: none;
+      margin-bottom: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">BUTTER SHOP</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Products</a>
+      <a href="#" style="color: var(--butter-brown); font-weight:700;">Contact Us</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Contact Us</h1>
+    <p>
+      Reach out for inquiries, orders, or support. We're always ready to help you enjoy the best butter products!
+    </p>
+  </section>
+
+  <section class="contact-grid">
+    <div class="contact-box">
+      <h3>📞 Phone</h3>
+      <p>0723 112 445</p>
+    </div>
+
+    <div class="contact-box">
+      <h3>💬 WhatsApp</h3>
+      <p>+254 700 445 889</p>
+    </div>
+
+    <div class="contact-box">
+      <h3>📧 Email</h3>
+      <p>support@butterecorm.com</p>
+    </div>
+
+    <div class="contact-box">
+      <h3>🏪 Our Shop</h3>
+      <p>123 Butter Street, Eldoret, Kenya</p>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div>
+      <h2>Get In Touch</h2>
+      <p>Send us a message and our team will reply shortly.</p>
+
+      <form class="form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Email Address" required />
+        <input type="text" placeholder="Subject" />
+        <textarea placeholder="Message" rows="6"></textarea>
+        <button class="btn" type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4038.6616127776695!2d35.2698!3d0.5143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x178101f5fb0f7b3d%3A0x6d93e5b301d2!2sEldoret!5e0!3m2!1sen!2ske!4v2023"
+        width="100%" height="380" style="border:0; border-radius:10px;" allowfullscreen loading="lazy">
+      </iframe>
+    </div>
+  </section>
+
+  <footer>
+    <div>
+      <h3>Butter Ecommerce</h3>
+      <p>Your number one shop for quality butter, spreads, and dairy delights.</p>
+    </div>
+
+    <div>
+      <h3>Links</h3>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Products</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div>
+      <h3>Contact</h3>
+      <p>📍 Eldoret, Kenya</p>
+      <p>📞 0723 112 445</p>
+      <p>📧 support@butterecorm.com</p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,344 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    color: #333;
+}
+/*-------------------
+    Header
+--------------------*/
+header {
+    background: #fff;
+    border-bottom: 2px solid #d4a017;
+    margin: 0;
+    display: flex;
+    justify-content: space-between; /* pushes nav to the right */
+    align-items: center;  /* perfect alignment */
+    padding: 10px 40px;
+}
+
+
+header .logo img {
+    height: 40px;
+}
+
+.content_header {
+    align-items: left;
+    color: #513401;
+    background-color: #000;
+    padding-right: 20px;
+}
+
+
+/* Logo container */
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    top:12%;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 6px;
+}
+
+.logo-text {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #513401;
+    font-family: 'Poppins', sans-serif;
+    margin-right: 6px;
+}
+
+ul {
+    margin: 0;
+    float: right;
+    padding: 0;
+    list-style-type: none;
+    right: 100%;
+    color:#513401
+}
+
+li {
+    display: inline-block;
+    margin-right: 20px;
+
+}
+/* Navigation styling */
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+
+nav a {
+    text-decoration: none;
+    line-height: 2.5;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    padding: 2% 0%;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    width: 0%;
+    height: 3px;
+    background: #000;
+    transition: width 0.3s ease;
+}
+
+nav a:hover {
+    color: #d4a017;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+/* GLOBAL RESPONSIVE RESET */
+* {
+    box-sizing: border-box;
+}
+
+/* Header adjusts on small screens */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+        text-align: center;
+        gap: 10px;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+}
+
+/* HERO section responsive */
+.hero {
+    height: auto;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.4rem;
+}
+
+.hero .btn {
+    padding: 12px 28px;
+}
+
+/* Very small phones */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.9rem;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+}
+
+/*-------------------
+    Hero section 
+--------------------*/
+.hero {
+    position: relative;
+    height: 40vh;
+    /* almost full screen */
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+    /* Background image + golden overlay */
+    background: linear-gradient(to top, #d9a413e6 50%, #d9a413e6 50%, #d9a413e6 50%, #d9a413e6 50%, #f5c5424d 70%, transparent 100%), url('store.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 40px;
+}
+
+
+/* Content container */
+
+.hero-content {
+    max-width: 700px;
+    animation: fadeInUp 1.5s ease;
+    z-index: 2;
+    align-items: left;
+    justify-content: center;
+    /* ensure text is above overlay */
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    color: #fffef5;
+}
+
+
+/* Call-to-action button */
+
+.hero .btn {
+    padding: 14px 35px;
+    background: #fff;
+    border-color: #b98c14;
+    color: #b98c14;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content p {
+    flex: 2;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #000;
+}
+* Call-to-action button */
+
+.hero .btn {
+    padding: 14px 35px;
+    background: #fff;
+    border-color: #b98c14;
+    color: #b98c14;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hero .btn:hover {
+    background: #fff;
+    border-color: #b98c14;
+    color: #b98c14;
+    transform: translateY(-3px);
+}
+/* Grid container */
+.product-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* responsive 3 columns */
+  gap: 1rem;
+  padding: 2rem;
+  background-color: #fff8dc; /* buttery light yellow background */
+}
+
+/* Section styling */
+.intro-section {
+  background-color: #fffbe0; /* light buttery background */
+  padding: 4rem 1rem;       /* generous vertical spacing */
+  text-align: center;
+}
+
+/* Container to center content and limit width */
+.intro-section .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Heading */
+.intro-section h2 {
+  font-size: 2.2rem;
+  color: #b77f00;   /* warm butter accent */
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+/* Subheading / paragraph */
+.intro-section p {
+  font-size: 1.1rem;
+  color: #5c4a00;  /* darker butter shade for contrast */
+  line-height: 1.6;
+}
+/* Grid container */
+.product-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* responsive 3 columns */
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #fff8dc; /* buttery background */
+}
+
+/* Product card styling */
+.product-card {
+  background-color: #fffbea; /* light butter tone */
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card img {
+  width: 100%;
+  display: block;
+  border-bottom: 2px solid #f7e07b; /* subtle butter accent */
+  border-radius: 20px 20px 0 0;
+}
+
+.product-card .description {
+  padding: 1rem 1.5rem 2rem 1.5rem;
+}
+
+.product-card .description h3 {
+  color: #b77f00; /* butter accent */
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.product-card .description p {
+  color: #5c4a00; /* darker butter shade */
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Hover effect */
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.18);
+}
+
+/*-------------------
+    Footer
+--------------------*/
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #f5c542;
+    color: #070000;
+    bottom: 90px;
+    width: 100%;
+}
+
+.foot {
+    text-align: center;
+    padding: 20px;
+    background: #f5c542;
+    color: #070000;
+    bottom: 0px;
+    width: 100%;
+    position: fixed;
+}
