@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Butter Ecommerce - Contact Us</title>
+  <style>
+    :root {
+      --butter-yellow: #f7c843;
+      --butter-dark: #f7c843;
+      --butter-soft: #fff6dd;
+      --butter-brown: #8a5a2e;
+      --text-dark: #2f2f2f;
+      --white: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Poppins", Arial, sans-serif;
+      background: #ffffff;
+      color: var(--text-dark);
+    }
+
+    header {
+      background: var(--white);
+      padding: 20px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    .logo {
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--butter-brown);
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: var(--text-dark);
+      font-weight: 500;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 5px;
+      background: var(--butter-soft);
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      color: var(--butter-brown);
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      max-width: 600px;
+      margin: auto;
+      color: #555;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      padding: 40px 60px;
+    }
+
+    .contact-box {
+      background: var(--butter-soft);
+      padding: 25px;
+      border-radius: 10px;
+      text-align: center;
+      border: 1px solid #f0e0b2;
+    }
+    .new-account-box {
+      background: white;
+      padding: 25px;
+      color: #b8f404;
+      border-radius: 10px;
+      text-align: center;
+      border: 1px solid #b8f404;
+    }
+
+    .deleted-account-box {
+    background: white;
+      padding: 25px;
+      color: #f40404;
+      border-radius: 10px;
+      text-align: center;
+      border: 1px solid #f40404;
+    }
+
+    .suspend-account-box {
+      background: white;
+      padding: 25px;
+      color: #2404f4;
+      border-radius: 10px;
+      text-align: center;
+      border: 1px solid #2404f4;
+    }
+
+
+    .contact-box h3 {
+      margin: 10px 0;
+      color: var(--butter-brown);
+    }
+
+    .contact-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 40px 60px;
+      gap: 40px;
+    }
+
+    .form input,
+    .form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 15px;
+    }
+
+    .btn {
+      background: var(--butter-yellow);
+      border: none;
+      padding: 14px 30px;
+      font-size: 16px;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--butter-dark);
+    }
+
+    footer a {
+      display: block;
+      color: #eee;
+      text-decoration: none;
+      margin-bottom: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Butter Dashboard</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Products</a>
+      <a href="#" style="color: var(--butter-brown); font-weight:700;">Contact Us</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Account Management</h1>
+  </section>
+
+  <section class="contact-grid">
+    <div class="new-account-box">
+      <h3>New Accounts</h3>
+      <p>0723 112 445</p>
+    </div>
+
+    <div class="deleted-account-box">
+      <h3>Deleted Accounts</h3>
+      <p>+254 700 445 889</p>
+    </div>
+
+    <div class="suspend-account-box">
+      <h3>Suspended Account</h3>
+      <p>support@butterecorm.com</p>
+    </div>
+  </section>
+  <section class="hero">
+    <h1>Products and Services Management</h1>
+  </section>
+
+  <section class="contact-grid">
+    <div class="new-account-box">
+      <h3>New Products</h3>
+      <p>0723 112 445</p>
+    </div>
+
+    <div class="deleted-account-box">
+      <h3>Deleted Products</h3>
+      <p>+254 700 445 889</p>
+    </div>
+
+    <div class="suspend-account-box">
+      <h3>Suspended Products</h3>
+      <p>support@butterecorm.com</p>
+    </div>
+  </section>
+</body>
+</html>

@@ -7,7 +7,7 @@
   <style>
     :root {
       --butter-yellow: #f7c843;
-      --butter-dark: #4a3f2f;
+      --butter-dark: #f7c843;
       --butter-soft: #fff6dd;
       --butter-brown: #8a5a2e;
       --text-dark: #2f2f2f;
@@ -45,7 +45,7 @@
 
     .hero {
       text-align: center;
-      padding: 80px 20px;
+      padding: 5px;
       background: var(--butter-soft);
     }
 
@@ -75,6 +75,33 @@
       text-align: center;
       border: 1px solid #f0e0b2;
     }
+    .new-account-box {
+      background: white;
+      padding: 25px;
+      color: #b8f404;
+      border-radius: 10px;
+      text-align: center;
+      border: 1px solid #b8f404;
+    }
+
+    .deleted-account-box {
+    background: white;
+      padding: 25px;
+      color: #f40404;
+      border-radius: 10px;
+      text-align: center;
+      border: 1px solid #f40404;
+    }
+
+    .suspend-account-box {
+      background: white;
+      padding: 25px;
+      color: #2404f4;
+      border-radius: 10px;
+      text-align: center;
+      border: 1px solid #2404f4;
+    }
+
 
     .contact-box h3 {
       margin: 10px 0;
@@ -109,20 +136,6 @@
       color: var(--butter-dark);
     }
 
-    footer {
-      background: var(--butter-dark);
-      color: var(--white);
-      padding: 40px 60px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 40px;
-    }
-
-    footer h3 {
-      margin-bottom: 15px;
-      color: var(--butter-yellow);
-    }
-
     footer a {
       display: block;
       color: #eee;
@@ -134,7 +147,7 @@
 <body>
 
   <header>
-    <div class="logo">BUTTER SHOP</div>
+    <div class="logo">Butter Dashboard</div>
     <nav>
       <a href="#">Home</a>
       <a href="#">About</a>
@@ -144,77 +157,44 @@
   </header>
 
   <section class="hero">
-    <h1>Contact Us</h1>
-    <p>
-      Reach out for inquiries, orders, or support. We're always ready to help you enjoy the best butter products!
-    </p>
+    <h1>Account Management</h1>
   </section>
 
   <section class="contact-grid">
-    <div class="contact-box">
-      <h3>📞 Phone</h3>
+    <div class="new-account-box">
+      <h3>New Accounts</h3>
       <p>0723 112 445</p>
     </div>
 
-    <div class="contact-box">
-      <h3>💬 WhatsApp</h3>
+    <div class="deleted-account-box">
+      <h3>Deleted Accounts</h3>
       <p>+254 700 445 889</p>
     </div>
 
-    <div class="contact-box">
-      <h3>📧 Email</h3>
+    <div class="suspend-account-box">
+      <h3>Suspended Account</h3>
       <p>support@butterecorm.com</p>
     </div>
-
-    <div class="contact-box">
-      <h3>🏪 Our Shop</h3>
-      <p>123 Butter Street, Eldoret, Kenya</p>
-    </div>
+  </section>
+  <section class="hero">
+    <h1>Products and Services Management</h1>
   </section>
 
-  <section class="contact-section">
-    <div>
-      <h2>Get In Touch</h2>
-      <p>Send us a message and our team will reply shortly.</p>
-
-      <form class="form">
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Email Address" required />
-        <input type="text" placeholder="Subject" />
-        <textarea placeholder="Message" rows="6"></textarea>
-        <button class="btn" type="submit">Send Message</button>
-      </form>
+  <section class="contact-grid">
+    <div class="new-account-box">
+      <h3>New Products</h3>
+      <p>0723 112 445</p>
     </div>
 
-    <div>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4038.6616127776695!2d35.2698!3d0.5143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x178101f5fb0f7b3d%3A0x6d93e5b301d2!2sEldoret!5e0!3m2!1sen!2ske!4v2023"
-        width="100%" height="380" style="border:0; border-radius:10px;" allowfullscreen loading="lazy">
-      </iframe>
+    <div class="deleted-account-box">
+      <h3>Deleted Products</h3>
+      <p>+254 700 445 889</p>
+    </div>
+
+    <div class="suspend-account-box">
+      <h3>Suspended Products</h3>
+      <p>support@butterecorm.com</p>
     </div>
   </section>
-
-  <footer>
-    <div>
-      <h3>Butter Ecommerce</h3>
-      <p>Your number one shop for quality butter, spreads, and dairy delights.</p>
-    </div>
-
-    <div>
-      <h3>Links</h3>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Products</a>
-      <a href="#">Contact</a>
-    </div>
-
-    <div>
-      <h3>Contact</h3>
-      <p>📍 Eldoret, Kenya</p>
-      <p>📞 0723 112 445</p>
-      <p>📧 support@butterecorm.com</p>
-    </div>
-  </footer>
-
 </body>
 </html>

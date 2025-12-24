@@ -125,6 +125,13 @@ li {
     }
 }
 
+/*Separators*/
+.les {
+      text-align: left;
+      padding: 2px;
+      background: #f5c542;
+    }
+
 
 /* Navigation styling */
 

@@ -1,0 +1,267 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    color: #333;
+}
+/*-------------------
+    Header
+--------------------*/
+header {
+    background: #fff;
+    border-bottom: 2px solid #d4a017;
+    margin: 0;
+    display: flex;
+    justify-content: space-between; /* pushes nav to the right */
+    align-items: center;  /* perfect alignment */
+    padding: 10px 40px;
+}
+
+
+header .logo img {
+    height: 40px;
+}
+
+.content_header {
+    align-items: left;
+    color: #513401;
+    background-color: #000;
+    padding-right: 20px;
+}
+
+
+/* Logo container */
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    top:12%;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 6px;
+}
+
+.logo-text {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #513401;
+    font-family: 'Poppins', sans-serif;
+    margin-right: 6px;
+}
+
+ul {
+    margin: 0;
+    float: right;
+    padding: 0;
+    list-style-type: none;
+    right: 100%;
+    color:#513401
+}
+
+li {
+    display: inline-block;
+    margin-right: 20px;
+
+}
+/* Navigation styling */
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+
+nav a {
+    text-decoration: none;
+    line-height: 2.5;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    padding: 2% 0%;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    width: 0%;
+    height: 3px;
+    background: #000;
+    transition: width 0.3s ease;
+}
+
+nav a:hover {
+    color: #d4a017;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+/* GLOBAL RESPONSIVE RESET */
+* {
+    box-sizing: border-box;
+}
+
+/* Header adjusts on small screens */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+        text-align: center;
+        gap: 10px;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+}
+.about-hero {
+    position: relative;
+    height: 30vh;
+    /* almost full screen */
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+    /* Background image + golden overlay */
+    background: linear-gradient(to bottom, #d9a413e6 50%, #d9a413e6 60%, #d9a413e6 70%, #d9a413e6 80%, #f5c5424d 90%, transparent 100%), url('1.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 40px;
+}
+
+/*-------------------
+    About content
+--------------------*/
+
+.about-section {
+    padding: 60px 10%;
+}
+
+.about-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #f5c542;
+    margin-bottom: 30px;
+}
+
+.about-section p {
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    color: #ddd;
+    font-size: 1.1rem;
+}
+/* Mission & Vision */
+
+.cards {
+    background-color: #1b1b1b;
+    border-radius: 12px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #1b1b1b;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h3 {
+    color: #f5c542;
+    margin-bottom: 15px;
+}
+
+ 
+/* Team section */
+
+.team-section {
+    background: #111;
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.team-section h2 {
+    font-size: 2.5rem;
+    color: #f5c542;
+    margin-bottom: 30px;
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    background: #1b1b1b;
+    border-radius: 12px;
+    padding: 20px;
+    width: 220px;
+    transition: transform 0.3s;
+}
+
+.team-member:hover {
+    transform: translateY(-8px);
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #f5c542;
+}
+
+.team-member h4 {
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    color: #aaa;
+    font-size: 0.9rem;
+}
+ 
+
+/*-------------------
+    Footer
+--------------------*/
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #f5c542;
+    color: #070000;
+    bottom: 90px;
+    width: 100%;
+}
+
+.foot {
+    text-align: center;
+    padding: 20px;
+    background: #f5c542;
+    color: #070000;
+    bottom: 0px;
+    width: 100%;
+    position: fixed;
+}

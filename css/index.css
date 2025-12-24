@@ -163,7 +163,7 @@ nav a:hover::after {
     align-items: left;
     text-align: left;
     /* Background image + golden overlay */
-    background: linear-gradient(to top, #d9a413e6 50%, #d9a413e6 50%, #d9a413e6 50%, #d9a413e6 50%, #f5c5424d 70%, transparent 100%), url('store.jpg') no-repeat center center/cover;
+    background: linear-gradient(to top, #d9a413e6 50%, #d9a413e6 50%, #d9a413e6 50%, #d9a413e6 50%, #f5c5424d 70%, transparent 100%), url('index.jpg') no-repeat center center/cover;
     color: #fff;
     padding: 40px;
 }
