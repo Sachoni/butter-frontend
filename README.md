@@ -1,2 +1,2 @@
 # butter-ecommerce
-Eccomerce web
+Eccomerce web for exchange, selling and buying products 
