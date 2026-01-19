@@ -20,7 +20,6 @@
     <!-- Left form -->
     <div class="login-form">
       <h2>Hello there...</h2>
-      <p>Welcome to butter communty</p>
 
       <form action="/login" method="post">
         <div class="input-group">
@@ -29,24 +28,17 @@
         </div>
 
         <div class="input-group">
-          <label for="password">Password</label>
+          <label for="password">Set Password</label>
+          <input type="password" id="password" name="password" placeholder="••••••••" required>
+        </div>
+
+        <div class="input-group">
+          <label for="password">Confirm Password</label>
           <input type="password" id="password" name="password" placeholder="••••••••" required>
         </div>
 
         <button type="submit">Sign In</button>
       </form>
-
-      <div class="social-login">
-        <button aria-label="Login with Google"><i class="fab fa-google"></i></button>
-        <button aria-label="Login with Facebook"><i class="fab fa-facebook-f"></i></button>
-        <button aria-label="Login with Apple"><i class="fab fa-apple"></i></button>
-      </div>
-    </div>
-
-    <!-- Right image -->
-    <div class="login-image">
-      <img src="Logo.png" alt="Login Avatar">
-    </div>
   </div>
 </body>
 </html>

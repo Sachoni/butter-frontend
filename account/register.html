@@ -1,40 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Butter Login</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-  <link rel="icon" href="Logo.png" type="image/png" />
-  <link rel="stylesheet" href="style.css" />
-
-</head>
+<html>
 <body>
-  <div class="login-container">
-    <!-- Left form -->
-    <div class="login-form">
-      <h2>Butter Account.</h2>
-      <p>.</a></p>
+<h2>Register</h2>
 
-      <form action="/login" method="post">
-        <div class="input-group">
-          <label for="username">Username</label>
-          <input type="username" id="usernme" name="username" placeholder="eg, Mark" required>
-        </div>
+<input id="email" type="email" placeholder="Email"><br>
+<input id="password" type="password" placeholder="Password"><br>
 
-        <div class="input-group">
-          <label for="phone">Phone</label>
-          <input type="phone" id="phone" name="phone" placeholder="+254.........." required>
-        </div>
+<button onclick="register()">Create Account</button>
 
-        <button type="submit">Get OTP</button>
-      </form>
-    </div>
-
-    <!-- Right image -->
-    <div class="login-image">
-      <img src="Logo.png" alt="Login Avatar">
-    </div>
-  </div>
+<script src="auth.js" type="module"></script>
 </body>
 </html>

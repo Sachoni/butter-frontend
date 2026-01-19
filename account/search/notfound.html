@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Butter Login</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="icon" href="Logo.png" type="image/png" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: url('css/3203830.jpg') no-repeat center center/cover;
+      position: relative;
+    }
+
+    /* Dark overlay */
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.65);
+      z-index: 0;
+    }
+
+    .login-container {
+      display: flex;
+      padding: 12px;
+      background: rgba(20, 20, 20, 0.9);
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+      width: 90%;
+      max-width: 950px;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Left section - form */
+    .login-form {
+      flex: 1;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .login-form h2 {
+      font-size: 2rem;
+      color: #f5c542;
+      margin-bottom: 15px;
+    }
+
+    .login-form p {
+      color: #ccc;
+      margin-bottom: 25px;
+      font-size: 0.95rem;
+    }
+
+    .login-form p a {
+      color: #f5c542;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    
+    /* Call-to-action button */
+
+.btn {
+    padding: 14px 20px;
+    background: linear-gradient(45deg, #d4a017, #f5c542);
+    border-color: #b98c14;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+    background: #fff;
+    border-color: #b98c14;
+    color: #b98c14;
+    transform: translateY(-3px);
+}
+    .social-login {
+      margin-top: 25px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .social-login button {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+      background: #333;
+      color: #fff;
+      font-size: 18px;
+      transition: background 0.3s;
+    }
+
+    .social-login button:hover {
+      background: #f5c542;
+      color: #000;
+    }
+
+    /* Right section - image */
+    .login-image {
+      flex: 1;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .login-image img {
+      max-width: 90%;
+      border-radius: 50%;
+      border: 4px solid #f5c542;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .login-container {
+        flex-direction: column;
+      }
+      .login-image {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <!-- Left form -->
+ <!-- Left form -->
+    <div class="login-form">
+      <h2>Account not found !</h2>
+      <p>Create one.</a></p>
+
+      <form action="/login" method="post">
+
+        <a href="..\create/register.html" class="btn">Create</a>
+        <a href="../login.html" class="btn">Go back</a>
+      </form>
+    </body>
+</html>
